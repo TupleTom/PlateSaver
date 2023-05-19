@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TupleTom/https---github.com-tommynguy1-PlateSaver.git"
+    "url": "git+https://github.com/TupleTom/PlateSaver.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TupleTom/https---github.com-tommynguy1-PlateSaver/issues"
+    "url": "https://github.com/TupleTom/PlateSaver/issues"
   },
-  "homepage": "https://github.com/TupleTom/https---github.com-tommynguy1-PlateSaver#readme",
+  "homepage": "https://github.com/TupleTom/PlateSaver#readme",
   "dependencies": {
     "express": "^4.18.2",
     "mongoose": "^7.2.0",

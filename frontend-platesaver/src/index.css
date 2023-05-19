@@ -1,0 +1,75 @@
+/* Reset some basic elements */
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+body {
+    /* Soft green background */
+    background-color: #eafbea;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6em;
+}
+
+a {
+    /* Darker green for links */
+    color: #388e3c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2e7d32;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Headers are bold and have a bit more margin */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Tables, lists, paragraphs get some spacing */
+table, ul, p {
+    margin: 20px 0;
+}
+
+/* All table cells and headers have padding */
+th, td {
+    padding: 10px;
+}
+
+/* Mildly rounded, bordered inputs with some padding */
+input, select, textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    font: inherit;
+}
+
+/* Buttons are a stronger green color, white text */
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+button:disabled {
+    background-color: #a5d6a7;
+    cursor: not-allowed;
+}
