@@ -1,0 +1,19 @@
+{
+  "name": "platesaver",
+  "version": "1.0.0",
+  "description": "platesaver package",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TupleTom/https---github.com-tommynguy1-PlateSaver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TupleTom/https---github.com-tommynguy1-PlateSaver/issues"
+  },
+  "homepage": "https://github.com/TupleTom/https---github.com-tommynguy1-PlateSaver#readme"
+}
