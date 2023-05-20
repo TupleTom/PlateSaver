@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import ManageInventoryPage from './pages/ManageInventoryPage';
 import MealPlanningPage from './pages/MealPlanningPage';
 import Navbar from './components/Navbar';
+import './globalStyles.css';
 
 function App() {
   return (

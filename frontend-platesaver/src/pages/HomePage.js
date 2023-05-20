@@ -1,58 +1,65 @@
-import React from 'react';
+
+import React, { useState } from "react";
+import './../globalStyles.css';
 
 const HomePage = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = () => {
+    if (username === "example" && password === "password") {
+      setIsLoggedIn(true);
+    } else {
+      alert("Invalid username or password. Please try again.");
+    }
+  };
+
+  if (isLoggedIn) {
     return (
-        <div style={{ 
-            display: 'flex', 
-            flexDirection: 'column', 
-            alignItems: 'center', 
-            justifyContent: 'center', 
-            height: '100vh', 
-            background: '#F0F0F0' 
-        }}>
-            <h1 style={{ 
-                color: '#52B788', 
-                fontSize: '3em', 
-                marginBottom: '20px'
-            }}>
-                Welcome to PlateSaver
-            </h1>
-            <p style={{ 
-                color: '#52B788', 
-                fontSize: '1.2em', 
-                lineHeight: '1.5', 
-                textAlign: 'center', 
-                maxWidth: '600px', 
-                padding: '0 20px' 
-            }}>
-                We're here to help you reduce food waste, save money, and make an impact. Join us in our mission and start making a difference today!
-            </p>
-            <div style={{
-                marginTop: '50px',
-                borderRadius: '20px',
-                padding: '20px',
-                background: '#FFFFFF',
-                boxShadow: '0px 0px 15px rgba(0, 0, 0, 0.1)'
-            }}>
-                <h2 style={{ 
-                    color: '#52B788', 
-                    fontSize: '2em', 
-                    marginBottom: '20px'
-                }}>
-                    How to Get Started
-                </h2>
-                <p style={{ 
-                    color: '#52B788', 
-                    fontSize: '1em', 
-                    lineHeight: '1.5', 
-                }}>
-                    1. Register an account<br/>
-                    2. Add items to your inventory<br/>
-                    3. Start meal planning and saving food!
-                </p>
-            </div>
-        </div>
+      <div className="home-page">
+        <h1 className="home-page-title">Welcome back, {username}!</h1>
+      </div>
     );
+  }
+
+  return (
+    <div className="home-page">
+      <div className="content-center">
+        <h1 className="home-page-title">Welcome to PlateSaver</h1>
+        <p className="home-page-description">
+          We're here to help you reduce food waste, save money, and make an
+          impact. Join us in our mission and start making a difference today!
+        </p>
+        <div className="home-page-instructions">
+          <h2 className="home-page-instructions-title">How to Get Started</h2>
+          <p className="home-page-instructions-steps">
+            1. Register an account
+            <br />
+            2. Add items to your inventory
+            <br />
+            3. Start meal planning and saving food!
+          </p>
+        </div>
+        <div className="login-form">
+          <h2>Login</h2>
+          <input
+            type="text"
+            placeholder="Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button onClick={handleLogin}>Log In</button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default HomePage;

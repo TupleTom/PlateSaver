@@ -1,19 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site for Food Waste Reduction Platform"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <title>PlateSaver</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site for Food Waste Reduction Platform" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <title>PlateSaver</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div id="root">
+    <!-- Your existing HTML content goes here -->
+
+    <!-- Login form -->
+    <div id="login-form" class="login-form">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username or Email">
+      <input type="password" id="password" placeholder="Password">
+      <button id="login-button">Log In</button>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar" style="display: none;">
+      <!-- Your navbar content goes here -->
+    </nav>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var loginButton = document.getElementById("login-button");
+      loginButton.addEventListener("click", login);
+    });
+
+    function login() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Perform user authentication (customize this part based on your requirements)
+      if (username === "example" && password === "password") {
+        alert("Login successful!");
+        showNavbar();
+      } else {
+        alert("Invalid username or password. Please try again.");
+      }
+    }
+
+    function showNavbar() {
+      var loginForm = document.getElementById("login-form");
+      var navbar = document.getElementById("navbar");
+
+      loginForm.style.display = "none";
+      navbar.style.display = "block";
+    }
+  </script>
+</body>
 </html>
