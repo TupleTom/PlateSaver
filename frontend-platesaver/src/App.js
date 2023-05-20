@@ -9,6 +9,7 @@ import './globalStyles.css';
 function App() {
   return (
     <div className="App">
+        <h1 className="home-page-title-top">PlateSaver</h1>
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />

@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import './../globalStyles.css';
 
@@ -26,19 +25,18 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <div className="content-center">
-        <h1 className="home-page-title">Welcome to PlateSaver</h1>
         <p className="home-page-description">
           We're here to help you reduce food waste, save money, and make an
           impact. Join us in our mission and start making a difference today!
         </p>
         <div className="home-page-instructions">
-          <h2 className="home-page-instructions-title">How to Get Started</h2>
+          <h2 className="home-page-instructions-title"></h2>
           <p className="home-page-instructions-steps">
-            1. Register an account
+         
             <br />
-            2. Add items to your inventory
+           
             <br />
-            3. Start meal planning and saving food!
+          
           </p>
         </div>
         <div className="login-form">
