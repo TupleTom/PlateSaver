@@ -29,12 +29,12 @@ const ManageInventoryPage = () => {
 
   return (
     <div className="manage-inventory-page">
-      <h1 className="manage-inventory-page-title">Manage Inventory</h1>
+      <h1 className="manage-inventory-page-title"></h1>
       <p className="manage-inventory-page-description">
-        This is where you can add, view, and manage your inventory.
+    
       </p>
       <form onSubmit={handleFormSubmit}>
-        <h2>Add Item to Inventory</h2>
+        <h2 style={{textAlign: 'center', fontSize: '24px'}}>List items for sale</h2>
         <input
           type="text"
           placeholder="Item Name"
@@ -53,7 +53,7 @@ const ManageInventoryPage = () => {
           value={itemPrice}
           onChange={(event) => setItemPrice(event.target.value)}
         />
-        <label>Expiry Date</label>
+        <label></label>
         <input
           type="date"
           value={itemExpiryDate}
@@ -86,14 +86,14 @@ const ManageInventoryPage = () => {
       </div>
       <Link
         to={{
-          pathname: "/meal-planning",
+          pathname: "/food-shelters",
           state: {
             inventoryData: inventory,
           },
         }}
-        className="meal-planning-link"
+        className="food-shelters-link"
       >
-        Go to Meal Planning
+        Donate Food
       </Link>
     </div>
   );

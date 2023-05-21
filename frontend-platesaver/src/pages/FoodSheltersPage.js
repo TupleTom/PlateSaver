@@ -1,7 +1,8 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css"; // ensure Leaflet's CSS is imported
+import "leaflet/dist/leaflet.css";
 import placeholderIcon from "./../placeholder.png";
+import "./../globalStyles.css";
 
 const locations = [
   { id: 1, name: "Shelter 1", position: [44.5654, -123.262], type: "shelter" },
@@ -10,19 +11,17 @@ const locations = [
   { id: 4, name: "Shelter 4", position: [44.5854, -123.274], type: "shelter" },
   { id: 5, name: "Shelter 5", position: [44.5036, -123.2029], type: "shelter" },
   { id: 6, name: "Shelter 6", position: [44.5926, -123.2209], type: "shelter" },
-
   {
     id: 3,
     name: "Oregon State University",
     position: [44.5646, -123.2793],
     type: "university",
-  }, // OSU location
-  // Add more locations here...
+  },
 ];
 
 const customIcon = L.icon({
   iconUrl: placeholderIcon,
-  iconSize: [32, 32], // Adjust the size of the icon as needed
+  iconSize: [32, 32],
 });
 
 const FoodSheltersPage = () => {
@@ -32,16 +31,20 @@ const FoodSheltersPage = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh",
+        height: "calc(100vh - 120px)",
+        marginBottom: "-300px"
       }}
-    >
+    > 
       <div
         style={{
-          height: "600px",
+          height: "80%",
           width: "800px",
           borderRadius: "15px",
           overflow: "hidden",
           border: "2px solid #333",
+          marginTop: "-120px",
+          margin: '200px'
+    
         }}
       >
         <MapContainer

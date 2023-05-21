@@ -2,10 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ManageInventoryPage from './pages/ManageInventoryPage';
-import MealPlanningPage from './pages/MealPlanningPage';
+import AboutUsPage from './pages/AboutUsPage';
 import FoodSheltersPage from './pages/FoodSheltersPage';
 import Navbar from './components/Navbar';
 import './globalStyles.css';
+
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/manage-inventory" element={<ManageInventoryPage />} />
-          <Route path="/meal-planning" element={<MealPlanningPage />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/food-shelters" element={<FoodSheltersPage />} />
         </Routes>
     </div>

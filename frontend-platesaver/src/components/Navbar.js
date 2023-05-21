@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './../globalStyles.css';
 
 const Navbar = () => {
   const navStyle = {
@@ -7,7 +8,7 @@ const Navbar = () => {
     justifyContent: 'space-around',
     listStyle: 'none',
     padding: '20px',
-    backgroundColor: '#558b2f',
+    backgroundColor: '#32612D',
   };
   
   const linkStyle = {
@@ -26,7 +27,7 @@ const Navbar = () => {
           <Link style={linkStyle} to="/manage-inventory">Manage Inventory</Link>
         </li>
         <li>
-          <Link style={linkStyle} to="/meal-planning">Meal Planning</Link>
+          <Link style={linkStyle} to="/about-us">About Us</Link>
         </li>
         <li>
           <Link style={linkStyle} to="/food-shelters">Food Shelters</Link>
