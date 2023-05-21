@@ -28,6 +28,9 @@ const Navbar = () => {
         <li>
           <Link style={linkStyle} to="/meal-planning">Meal Planning</Link>
         </li>
+        <li>
+          <Link style={linkStyle} to="/food-shelters">Food Shelters</Link>
+        </li>
       </ul>
     </nav>
   );

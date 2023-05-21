@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './../globalStyles.css';
+import "./../globalStyles.css";
 
 const HomePage = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -32,11 +32,9 @@ const HomePage = () => {
         <div className="home-page-instructions">
           <h2 className="home-page-instructions-title"></h2>
           <p className="home-page-instructions-steps">
-         
             <br />
-           
+
             <br />
-          
           </p>
         </div>
         <div className="login-form">

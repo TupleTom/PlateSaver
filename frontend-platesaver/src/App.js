@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ManageInventoryPage from './pages/ManageInventoryPage';
 import MealPlanningPage from './pages/MealPlanningPage';
+import FoodSheltersPage from './pages/FoodSheltersPage';
 import Navbar from './components/Navbar';
 import './globalStyles.css';
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/manage-inventory" element={<ManageInventoryPage />} />
           <Route path="/meal-planning" element={<MealPlanningPage />} />
+          <Route path="/food-shelters" element={<FoodSheltersPage />} />
         </Routes>
     </div>
   );
