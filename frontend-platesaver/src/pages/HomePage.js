@@ -7,7 +7,7 @@ const HomePage = () => {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    if (username === "example" && password === "password") {
+    if (username === "Tommy" && password === "password1234") {
       setIsLoggedIn(true);
     } else {
       alert("Invalid username or password. Please try again.");
